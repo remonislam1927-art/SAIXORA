@@ -12,7 +12,7 @@ const crypto = require('node:crypto');
 const { pipeline } = require('node:stream');
 
 const ROOT = __dirname;
-const PUBLIC = ROOT;
+const PUBLIC = path.join(ROOT, 'public');
 const PRIVATE = path.join(ROOT, 'private', 'downloads');
 const PORT = Number(process.env.PORT || 8000);
 const PRODUCTION = process.env.NODE_ENV === 'production';
@@ -184,6 +184,4 @@ const server = http.createServer(async (req,res) => {
     else res.destroy();
   }
 });
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`SAIXORA running on port ${PORT}`);
-});
+server.listen(PORT, () => console.log(`SAIXORA running on http://localhost:${PORT}; use HTTPS before publishing.`));
