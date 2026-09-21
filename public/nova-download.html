@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070b16">
+  <meta name="description" content="Secure Nova school software downloads and installation information, from SAIXORA Technology.">
+  <title>Secure Nova — School Downloads | SAIXORA</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script src="site.js" defer></script>
+  <script src="nova-download.js" defer></script>
+</head>
+<body data-page="downloads">
+  <a class="skip" href="#main-content">Skip to content</a><div class="noise" aria-hidden="true"></div>
+  <header class="nav-wrap" id="siteNav"><nav class="nav container" aria-label="Primary navigation">
+    <a class="logo" href="main.html" aria-label="SAIXORA home"><img class="logo-mark brand-image" src="assets/saixora-symbol.webp" width="39" height="35" alt=""><span>SAIXORA<span class="dot">.</span></span></a>
+    <div class="nav-links"><a href="main.html">Home</a><a href="main.html#solutions">Solutions</a><a href="main.html#work">Our work</a><a class="active" href="nova-download.html" aria-current="page">Secure Nova</a><a href="main.html#founder">Founder</a></div>
+    <a class="nav-cta" href="contact.html?subject=Secure%20Nova%20enquiry">Enquire ↗</a>
+  </nav></header>
+  <main id="main-content">
+    <section class="container nova-hero" aria-labelledby="nova-heading">
+      <div class="nova-hero-copy reveal">
+        <p class="eyebrow"><span class="signal"></span> SAIXORA / SCHOOL TECHNOLOGY</p>
+        <h1 id="nova-heading">Your classrooms.<br><em>More connected.</em></h1>
+        <p>Secure Nova brings classroom Windows device access, teacher sessions and authorized administrative oversight together in one system.</p>
+        <div class="nova-hero-actions"><a class="btn btn-primary" href="#school-access">Access school downloads ↘</a><a class="btn btn-outline" href="contact.html?subject=Secure%20Nova%20enquiry">Request information ↗</a></div>
+        <p class="nova-disclaimer">Designed for authorized school deployment. Initial device setup and staff permissions must be approved by the school.</p>
+      </div>
+      <div class="nova-hero-art reveal"><div class="nova-art-top"><img src="assets/saixora-symbol.webp" alt="" width="34" height="31"><span>SECURE NOVA / SAIXORA</span><span class="signal-dot"></span></div><img src="assets/secure-nova.webp" alt="Illustrative Secure Nova website interface concept" loading="eager"><div class="nova-art-caption"><span>WINDOWS + ANDROID</span><span>ONE CONNECTED WORKFLOW ↗</span></div></div>
+    </section>
+    <div class="nova-ticker" aria-hidden="true"><span>WINDOWS SECURITY&nbsp; · &nbsp;TEACHER SESSIONS&nbsp; · &nbsp;ADMIN ACCESS&nbsp; · &nbsp;CLASSROOM TECHNOLOGY&nbsp; · &nbsp;SAIXORA&nbsp; · &nbsp;</span></div>
+    <section class="container nova-access" id="school-access" aria-labelledby="access-heading">
+      <div class="section-label reveal"><span>01 / AUTHORIZED ACCESS</span><span class="line"></span><span>SCHOOL SOFTWARE</span></div>
+      <div class="nova-access-grid">
+        <div class="nova-access-intro reveal"><h2 class="display-title" id="access-heading">The right tools.<br><em>For your school.</em></h2><p>School administrators and authorized staff can access the installers using the school access PIN supplied by SAIXORA. Do not share the PIN publicly.</p><div class="nova-security-note"><span aria-hidden="true">⌁</span><p>The PIN grants access to installer files only. Classroom data and application permissions require separate school accounts and security controls.</p></div></div>
+        <div class="nova-access-panel reveal">
+          <div class="nova-panel-top"><span><i></i> SCHOOL DOWNLOADS</span><span>RESTRICTED</span></div>
+          <div id="novaLock" class="nova-lock">
+            <div class="nova-lock-icon" aria-hidden="true">⌑</div><h3>Enter your access PIN</h3><p>Use the PIN provided privately by SAIXORA or your school's authorized administrator.</p>
+            <form id="novaPinForm" autocomplete="off"><label for="novaPin">School access PIN</label><div class="nova-pin-control"><input id="novaPin" name="pin" type="password" autocomplete="off" maxlength="128" required placeholder="Enter access PIN"><button type="button" id="novaTogglePin" aria-label="Show PIN" aria-pressed="false">Show</button></div><button type="submit" id="novaUnlockButton" class="btn btn-primary nova-full">Unlock downloads ↗</button></form>
+            <p id="novaAuthStatus" class="nova-status" role="status" aria-live="polite"></p>
+          </div>
+          <div id="novaUnlocked" class="nova-unlocked" hidden>
+            <div class="nova-unlocked-top"><div><span class="nova-access-badge">ACCESS GRANTED</span><h3>Choose your application.</h3><p>Download the installer appropriate for your approved device.</p></div><button id="novaLockAgain" class="nova-lock-again" type="button">Lock ↗</button></div>
+            <div id="novaFileList" class="nova-file-list" aria-live="polite"></div>
+            <p class="nova-status" id="novaFilesStatus" role="status"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container nova-info-section reveal" aria-labelledby="setup-heading"><div class="section-label"><span>02 / INSTALLATION</span><span class="line"></span><span>BEFORE YOU BEGIN</span></div><h2 class="display-title" id="setup-heading">One system.<br><em>Three applications.</em></h2><div class="nova-info-grid"><article><span>01 / WINDOWS</span><h3>Secure Nova PC</h3><p>Install on the authorized Windows OPS computer in each registered classroom.</p></article><article><span>02 / ANDROID</span><h3>N.Teachers</h3><p>Install on authorized teachers' Android phones using individual approved accounts.</p></article><article><span>03 / ANDROID</span><h3>N.Admin</h3><p>Install for designated school administrators and configure access according to the school's policy.</p></article></div><p class="nova-setup-note">The Windows application does not automatically monitor the smartboard's separate Android mode. Live viewing depends on compatible devices and network conditions.</p></section>
+    <section class="container nova-outro reveal"><div><span class="eyebrow">QUESTIONS ABOUT INSTALLATION?</span><h2>Let's get your school ready.</h2><p>Contact SAIXORA to discuss device compatibility, configuration and an authorized demonstration.</p></div><a class="btn btn-primary" href="contact.html?subject=Secure%20Nova%20installation">Contact SAIXORA ↗</a></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-head"><a class="footer-logo" href="main.html"><img src="assets/saixora-symbol.webp" alt="" width="48" height="43">SAIXORA<span>.</span></a><p>You think, I build.<br><span>Smart ideas into practical technology.</span></p></div><div class="footer-middle"><div><p class="footer-kicker">NAVIGATE</p><a href="main.html">Home</a><a href="main.html#solutions">Solutions</a><a href="main.html#work">Our work</a></div><div><p class="footer-kicker">SECURE NOVA</p><a href="#school-access">Downloads ↗</a><a href="contact.html?subject=Secure%20Nova%20enquiry">School enquiries ↗</a><a href="index.html">Cinematic experience ↗</a></div><div><p class="footer-kicker">INFORMATION</p><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></div></div><div class="footer-bottom"><span>© <span data-year>2026</span> SAIXORA TECHNOLOGY · STUDENT-FOUNDED INITIATIVE</span><a href="main.html">BACK HOME ↑</a></div></div></footer>
+  <nav class="mobile-dock" aria-label="Mobile quick navigation"><a href="main.html"><span aria-hidden="true">⌂</span>Home</a><a href="main.html#solutions"><span aria-hidden="true">◈</span>Services</a><a href="nova-download.html" class="active" aria-current="page"><span aria-hidden="true">▣</span>Nova</a><a href="main.html#founder"><span aria-hidden="true">✳</span>Founder</a><a href="contact.html"><span aria-hidden="true">↗</span>Contact</a></nav>
+</body>
+</html>
