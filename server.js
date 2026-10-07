@@ -13,7 +13,7 @@ const crypto = require('node:crypto');
 const { pipeline } = require('node:stream');
 
 const ROOT = __dirname;
-const PUBLIC = ROOT;
+const PUBLIC = path.join(ROOT, 'public');
 const PRIVATE = path.join(ROOT, 'private', 'downloads');
 
 const PORT = Number(process.env.PORT || 8000);
