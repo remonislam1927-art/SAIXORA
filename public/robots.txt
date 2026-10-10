@@ -1,0 +1,6 @@
+
+User-agent: *
+Disallow: /api/
+
+Sitemap: https://saixora-website.onrender.com/sitemap.xml
+  
