@@ -54,24 +54,28 @@ if (!PIN) {
    SAIXORA RELEASE FILES
    ============================================================ */
 
+
+/* SAIXORA SHIELD - OFFICIAL RELEASES */
+
 const releases = Object.freeze({
 
   windows: {
-    file: 'Saixora-Shield-Setup-1.1.7.exe',
-    name: 'Saixora Shield PC 1.1.7'
+    file: 'Saixora-Shield-Setup-1.1.9.exe',
+    name: 'Saixora Shield PC v1.1.9'
   },
 
   teachers: {
-    file: 'N-Teachers.apk',
-    name: 'N.Teachers'
+    file: 'N-Teachers-1.1.6.apk',
+    name: 'N.Teachers v1.1.6'
   },
 
   admin: {
-    file: 'N-Admin.apk',
-    name: 'N.Admin'
+    file: 'N-Admin-1.1.7.apk',
+    name: 'N.Admin v1.1.7'
   }
 
 });
+
 
 
 /* ============================================================

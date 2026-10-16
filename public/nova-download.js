@@ -35,33 +35,37 @@
      DOWNLOAD DISPLAY INFORMATION
      ============================================================ */
 
-  const labels = {
 
-    windows: {
-      name: 'Saixora Shield PC 1.1.7',
-      platform: 'WINDOWS',
-      note:
-        'Saixora Shield installer for authorized classroom Windows OPS computers',
-      icon: '▣'
-    },
+/* SAIXORA SHIELD - DOWNLOAD DISPLAY */
 
-    teachers: {
-      name: 'N.Teachers',
-      platform: 'ANDROID',
-      note:
-        'Teacher application · Android APK',
-      icon: '◈'
-    },
+ const labels = {
 
-    admin: {
-      name: 'N.Admin',
-      platform: 'ANDROID',
-      note:
-        'School administrator application · Android APK',
-      icon: '⌑'
-    }
+   windows: {
+     name: 'Saixora Shield PC v1.1.9',
+     platform: 'WINDOWS',
+     note:
+       'Version 1.1.9 · Windows OPS classroom security application',
+     icon: '▣'
+   },
 
-  };
+   teachers: {
+     name: 'N.Teachers v1.1.6',
+     platform: 'ANDROID',
+     note:
+       'Version 1.1.6 · Teacher application · Android APK',
+     icon: '◈'
+   },
+
+   admin: {
+     name: 'N.Admin v1.1.7',
+     platform: 'ANDROID',
+     note:
+       'Version 1.1.7 · School administrator application · Android APK',
+     icon: '⌑'
+   }
+
+};
+
 
 
   function setStatus(
